@@ -3,7 +3,8 @@ Intro to Crafty.js
 
 Crafty.js is a javascript game engine that provides a flexible, easily 
 extensible framework for game development. This is the slide deck for a talk
-I gave at the San Francisco GamesJS Meetup group on Aug 17, 2011.
+for the [San Francisco GamesJS Meetup group](http://www.meetup.com/gamesjs/) on 
+[Aug 17, 2011](http://www.meetup.com/gamesjs/events/27773901/).
 
 Resources
 ---------
