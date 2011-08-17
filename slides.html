@@ -3,11 +3,7 @@
 <meta charset="utf-8">
 <title>Game Development with Crafty.js</title>
 
-<!-- Your Slides -->
-<!-- One section is one slide -->
-
 <section>
-  <!-- This is the first slide -->
   <h1>Game Development with Crafty.js</h1>
   <footer>by Jack Lawson</footer>
 </section>
@@ -16,7 +12,8 @@
   <h1>Jack Lawson: Javascript Developer</h1>
   <ul>
     <li><a href="http://www.forio.com">Forio Online Simulations</a> - simulation development
-    <li><a href="http://www.thejacklawson.com">thejacklawson.com</a> - I'm not pretentious, jacklawson.com was taken
+    <li><a href="http://www.olivinelabs.com">Olivine Labs</a> - game development
+    <li><a href="http://www.thejacklawson.com">thejacklawson.com</a> - jacklawson.com was taken
     <li><a href="http://www.twitter.com/ajacksified">@ajacksified</a> on Twitter
   </ul>
 </section>
@@ -33,33 +30,55 @@
 
 <section>
   <h1>Let's Get Crafty</h1>
-  <!-- downloading crafty -->
+  <p>
+    Get the latest release at <a href="http://craftyjs.com">craftyjs.com</a> or
+    <a href="http://github.com/louisstow/Crafty">github.com/louisstow/Crafty</a>
+  </p>
 </section>
 
 <section>
   <h1>Initializing Crafty</h1>
-  <!-- minimal html markup, show how to assign to a spot in the dom,
-  using canvas vs. dom -->
+  <iframe src="http://jsfiddle.net/ajacksified/DTTKM/embedded/"></iframe>
 </section>
 
 <section>
-  <h1>Crafty Entities</h1>
-  <!-- make a red box, then extend that and make a blue box that you
-  can move with the keyboard -->  
+  <h1>Crafty.e (Entities)</h1>
+  <p>Plugin system: include modules on intitialization, apply properties/methods afterwards</p>
+  <iframe src="http://jsfiddle.net/ajacksified/3jcxB/embedded/"></iframe>
+</section>
+
+<section>
+  <h1>Crafty.c (Classes)</h1>
+  <iframe src="http://jsfiddle.net/ajacksified/PnrBQ/embedded/"></iframe>
+</section>
+
+<section>
+  <h1>Extending Classes</h1>
+  <iframe src="http://jsfiddle.net/ajacksified/8FySc/embedded/"></iframe>
 </section>
 
 <section>
   <h1>Collision</h1>
-  <!-- when the boxes touch, turn it yellow -->  
+  <iframe src="http://jsfiddle.net/ajacksified/wrKe5/embedded/"></iframe>  
 </section>
 
 <section>
   <h1>Animation</h1>
-  <!-- when the boxes touch, fade it yellow, then back -->
+  <iframe src="http://jsfiddle.net/ajacksified/zfVkz/embedded/"></iframe>
 </section>
 
 <section>
-  <h1>Get a Backbone</h1>
+  <h1>Sprites</h1>
+  <iframe src="http://jsfiddle.net/ajacksified/gSQ2y/embedded/"></iframe>
+</section>
+
+<!--<section>
+  <h1>Scenes</h1>
+
+</section>
+
+<section>
+  <h1>Crafty + Backbone</h1>
   <!-- make boxes using backbone for great success -->
 </section>
 
@@ -67,11 +86,7 @@
   <h1>Websockets for Multiplayer Games</h1>
   <!-- awwwyeahhhh, websockets -->
 </section>
-
-<section>
-  <h1>Let's Do Something Cool With this in the Next Five Minutes</h1>
-  <!-- build a tanks game -->
-</section>
+-->
 
 
 <section>
@@ -83,10 +98,6 @@
   </ul>
 </section>
 
-<!-- Your Style -->
-<!-- Define the style of you presentation -->
-
-<!-- Maybe a font from http://www.google.com/webfonts ? -->
 <link href='http://fonts.googleapis.com/css?family=News Cycle|Carme|Gentium+Basic' rel='stylesheet'>
 <link href='styles.css' rel='stylesheet' />
 
@@ -199,16 +210,6 @@
 
   /* Adapt the size of the slides to the window */
 
-  window.onresize = function() {
-    var sx = document.body.clientWidth / window.innerWidth;
-    var sy = document.body.clientHeight / window.innerHeight;
-    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
-    document.body.style.MozTransform = transform;
-    document.body.style.WebkitTransform = transform;
-    document.body.style.OTransform = transform;
-    document.body.style.msTransform = transform;
-    document.body.style.transform = transform;
-  }
   function getDetails(idx) {
     var s = document.querySelector("section:nth-of-type("+ idx +")");
     var d = s.querySelector("details");

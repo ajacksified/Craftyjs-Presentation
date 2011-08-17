@@ -19,3 +19,7 @@ Other Links of Interest
 * [Jack on GitHub](https://github.com/ajacksified)
 * [Forio Online Simulations](http://www.forio.com)
 * [Paul Rouget's Slide Template](https://github.com/paulrouget/dzslides)
+
+License
+-------
+[Licensed under WTFPL.](http://sam.zoy.org/wtfpl/)

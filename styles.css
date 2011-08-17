@@ -1,17 +1,16 @@
-html { background-color: black; font-family: 'News Cycle', arial, sans-serif; }
+html { background-color: #fff; font-family: 'News Cycle', arial, sans-serif; }
 body {background-color: white;}
 /* A section is a slide. It's size is 800x600, and this will never change */
 section {
     font-size: 2em;
 }
 h1, h2, h3 {
-    margin-top: 50px;
     text-align: center;
     color: #149c68;
     font-weight: normal;
 }
 ul {
-    margin-left: 200px;
+    margin-left: 150px;
 }
 a { color: #FF0066; } a:hover {text-decoration: underline;}
 footer { position: absolute; bottom: 50px; right: 50px; }
@@ -22,10 +21,10 @@ footer { position: absolute; bottom: 50px; right: 50px; }
    https://developer.mozilla.org/en/CSS/CSS_transitions
    How to use CSS3 Transitions: */
 section {
-    -moz-transition: left 400ms linear 0s;
-    -webkit-transition: left 400ms linear 0s;
-    -ms-transition: left 400ms linear 0s;
-    transition: left 400ms linear 0s;
+    -moz-transition: left 400ms ease-in-out 0s;
+    -webkit-transition: left 400ms ease-in-out 0s;
+    -ms-transition: left 400ms ease-in-out 0s;
+    transition: left 400ms ease-in-out 0s;
 }
 
 /* Before */
@@ -35,3 +34,5 @@ section[aria-selected] { left: 0; }
 /* After */
 section[aria-selected] ~ section { left: +150% }
 
+section p, section pre { margin: 0 1em; }
+section iframe { width: 80%; height: 450px; margin-left: 10%; margin-top: 20px; }
