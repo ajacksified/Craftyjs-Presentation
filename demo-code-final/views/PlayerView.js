@@ -14,7 +14,6 @@
       var y = this.model.get("y");
 
       this._craftyEntity.makePlayer(x, y);
-      console.log(this._craftyEntity);
     }
   });
 
