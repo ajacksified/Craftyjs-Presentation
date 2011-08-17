@@ -1,17 +1,17 @@
 (function($, window){
   window.PlayerView = Backbone.View.extend({
-    className: "Player",
+    className: 'Player',
 
     initialize: function(){
       _.bindAll(this, 'render');
 
-      this._craftyEntity = Crafty.e("Player");
+      this._craftyEntity = Crafty.e('Player');
       this.render();
     },
 
     render: function(){
-      var x = this.model.get("x");
-      var y = this.model.get("y");
+      var x = this.model.get('x');
+      var y = this.model.get('y');
 
       this._craftyEntity.makePlayer(x, y);
     }
@@ -21,7 +21,7 @@
     player: [0,0,1,1.5]
   });
 
-  Crafty.c("Player", {
+  Crafty.c('Player', {
     init: function(){
       this.addComponent('2D, Canvas, Fourway, player');
     },

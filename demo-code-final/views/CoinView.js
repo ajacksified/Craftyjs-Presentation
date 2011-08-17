@@ -1,6 +1,6 @@
 (function($, window){
   window.CoinView = Backbone.View.extend({
-    className: "Coin",
+    className: 'Coin',
 
     initialize: function(){
       _.bindAll(this, 'render');
@@ -8,7 +8,7 @@
     },
 
     render: function(){
-      this._craftyEntity.makeCoin(this.model.get("x"), this.model.get("y"));
+      this._craftyEntity.makeCoin(this.model.get('x'), this.model.get('y'));
     }
   });
 

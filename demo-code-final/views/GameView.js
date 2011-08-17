@@ -23,7 +23,7 @@
     },
 
     updatePoints: function(){
-      $("#points").text(this.get("points"));
+      $('#points').text(this.get('points'));
     }
   });
 })(jQuery, window);
